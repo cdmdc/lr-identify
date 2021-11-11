@@ -32,7 +32,7 @@ ADMISSIBLE_OBS['grad'] = ['gradavgabs_id',
                           'gradavgraw_id',
                           'gradavgsq_id']
 
-ADMISSIBLE_OBS['all'] = ADMISSIBLE_OBS['weight'] + ADMISSIBLE_OBS['act'] + ADMISSIBLE_OBS['grad']
+ADMISSIBLE_OBS['all'] = ADMISSIBLE_OBS['weight'] + ADMISSIBLE_OBS['act'] #+ ADMISSIBLE_OBS['grad']
 
 '''The set of all observable statistics (not guaranteed to always be finite).'''
 # preserve observable class ordering
@@ -85,4 +85,4 @@ ALL_OBS['grad'] = ['gradavgabs_id',
                    'gradavgraw_id',
                    'gradavgsq_id']
 
-ALL_OBS['all'] = ALL_OBS['weight'] + ALL_OBS['act'] + ALL_OBS['grad']
+ALL_OBS['all'] = ALL_OBS['weight'] + ALL_OBS['act'] #+ ALL_OBS['grad']

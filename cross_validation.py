@@ -390,13 +390,11 @@ def train_and_test_classifier(features,
 
     train_confmats = np.array(train_confmats)
     train_results = metrics.evaluate_results(predictions=train_predictions,
-                                             labels = train_labels,
                                             confmats=train_confmats,
                                              labels=train_classes,
                                              index_to_label=index_to_label)
     test_confmats = np.array(test_confmats)
     test_results = metrics.evaluate_results(predictions=test_predictions,
-                                            labels = test_labels,
                                             confmats=test_confmats,
                                             labels=train_classes,
                                             index_to_label=index_to_label)

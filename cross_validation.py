@@ -241,7 +241,7 @@ def validate_splits(splits, labels):
         train_labels = labels[split['train']]
         test_labels = labels[split['test']]
         assert (np.unique(train_labels) == train_classes).all()
-        assert set(test_labels) <= set(train_classes)
+        #assert set(test_labels) <= set(train_classes)
     return train_classes
 
 

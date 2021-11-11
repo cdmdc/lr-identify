@@ -108,7 +108,7 @@ def accuracy_confmat(cmat):
 
 
 
-def evaluate_results(confmats, labels, index_to_label=None):
+def evaluate_results(test_predictions,confmats, labels, index_to_label=None):
     """Convenience function that summarize results over confusion matrices
        Arguments:
            confmats = array of shape (ns, M, M)  where M = number of categories
@@ -137,5 +137,6 @@ def evaluate_results(confmats, labels, index_to_label=None):
     result['dprime_by_split'] = [dprime_confmat(c) for c in confmats]
     result['balanced_acc_by_split'] = [balanced_accuracy(c) for c in confmats]
     result['accuracy_by_split'] = [accuracy_confmat(c) for c in confmats]
+    result['predictions'] = test_predictions
 
     return result

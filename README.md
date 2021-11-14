@@ -1,4 +1,4 @@
-# Identifying Learning Rules From Neural Network Observables
+# Custom build-on for classifying neural data based on https://github.com/neuroailab/lr-identify
 
 **Aran Nayebi\*, Sanjana Srivastava\*, Surya Ganguli, Daniel L. K. Yamins**
 
